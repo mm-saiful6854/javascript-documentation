@@ -1,16 +1,3 @@
-## Object creation
-Javascript is all amount of object. Object creation is possible in different ways such as object literal, factory method, and constructor.
-
-## This keyword
-The keyword 'this' refers to a object who calls that scope of call. Those scope might be a function.
-
-## Variable types
-Javascript has two types of variables such as primitives and reference variables. Primitives include string, number, boolean, undefined, null, symbol and reference types include object, function, and array. By logically, function and array are both object.
-
-## Enumerate Properties
-
-
-```
 function Fighter(name, age){
     this.name = name;
     this.age = age;
@@ -34,4 +21,6 @@ for(let key of keys){
 }
 
 console.log('name' in fighter);
-```
+
+console.log(fighter.hasOwnProperty("latitude"))
+
