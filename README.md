@@ -109,3 +109,6 @@ const fighter = new Fighter();
 fighter.muscle = "strong";
 console.log(fighter);
 ```
+
+## Exercise
+Problem: Write a stopwatch object to be belonged start, stop, reset, and get duration.
