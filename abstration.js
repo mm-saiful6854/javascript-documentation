@@ -5,3 +5,13 @@ So the quote:
 */
 
 //private properties and methods
+
+function Fighter(){
+    this.name = "Saiful";
+    let muscle = "bisep-trisep"
+}
+
+const fighter = new Fighter();
+console.log(fighter.name);
+
+// here muscle is hidden. It is acting like private property.
