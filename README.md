@@ -131,3 +131,7 @@ const Fighter = {
 }
 console.log(Person.calculatedAge.call(Fighter));
 ```
+bind: it returns a new function by binding with given object.
+
+## Javascript scope
+It has 3 scope. 1. global, 2. function, 3. block

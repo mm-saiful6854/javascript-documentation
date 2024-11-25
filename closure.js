@@ -3,15 +3,19 @@ accessed to all its local variables as well as parent function's local variables
 */
 function Parent(){
     let x=0;
-    function child(){
+    let func = function child(){
         let y=0;
         x++;
         y++;
         console.log("x: ",x," y: ",y);
     }
-    child();
-    child();
-    child();
+    func();
+    console.log("x: ",x);
+    func();
+    func();
+    return func;
 }
 
-Parent();
+let f = Parent();
+console.log("out side")
+f();
