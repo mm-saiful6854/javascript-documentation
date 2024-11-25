@@ -112,3 +112,22 @@ console.log(fighter);
 
 ## Exercise
 Problem: Write a stopwatch object to be belonged start, stop, reset, and get duration.
+
+
+## Explain call(), apply() and bind()
+call() is built in javascript function. It helps one object to call another object's method.
+```
+const Person = {
+    name: "Alice",
+    age: 25,
+    calculatedAge: function() {
+        return this.age;
+    }
+}
+
+const Fighter = {
+    name: "John",
+    age: 28
+}
+console.log(Person.calculatedAge.call(Fighter));
+```
